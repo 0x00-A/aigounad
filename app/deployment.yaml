@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aigounad-app
+  namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: aigounad
+  template:
+    metadata:
+      labels:
+        app: aigounad
+    spec:
+      name: aigounad
+      image: wil42/playground:v1
+      port:
+      - containerPort: 8888

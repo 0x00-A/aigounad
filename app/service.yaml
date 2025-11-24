@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aigounad-service
+  namespace: dev
+spec:
+  selector:
+    app: aigounad
+  ports:
+    - port: 8888
+      targetPort: 8888
