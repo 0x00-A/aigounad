@@ -12,7 +12,8 @@ spec:
       labels:
         app: aigounad
     spec:
-      name: aigounad
-      image: wil42/playground:v1
-      port:
-      - containerPort: 8888
+      containers:
+      - name: aigounad
+        image: wil42/playground:v1
+        ports:
+        - containerPort: 8888
