@@ -7,5 +7,5 @@ spec:
   selector:
     app: aigounad
   ports:
-    - port: 8888
+    - nodePort: 8888
       targetPort: 8888
