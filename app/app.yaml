@@ -4,7 +4,7 @@ metadata:
   name: aigounad-service
   namespace: dev
 spec:
-  type: nodePort
+  type: NodePort
   selector:
     app: aigounad
   ports:
