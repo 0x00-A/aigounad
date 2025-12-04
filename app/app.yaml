@@ -4,13 +4,13 @@ metadata:
   name: aigounad-service
   namespace: dev
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: aigounad
   ports:
     - port: 8888
       targetPort: 8888
-      nodePort: 30888
+      # nodePort: 30888
 ---
 apiVersion: apps/v1
 kind: Deployment
